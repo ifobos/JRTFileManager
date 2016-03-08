@@ -37,9 +37,9 @@
     static id sharedInstance;
     
     dispatch_once(&once, ^
-                  {
-                      sharedInstance = [self new];
-                  });
+    {
+        sharedInstance = [self new];
+    });
     
     return sharedInstance;
 }
@@ -55,7 +55,7 @@
 
 - (JRTFileDownloader *)fileDownloader {
     if (!_fileDownloader) {
-        _fileDownloader =  [JRTFileDownloader new];
+        _fileDownloader = [JRTFileDownloader new];
     }
     return _fileDownloader;
 }
@@ -143,22 +143,23 @@
 
 #pragma mark - Download
 
-- (void)downloadFile:(NSString *)URLString
-            withName:(NSString *)name
-            progress:(void (^)(NSProgress *downloadProgress)) downloadProgressBlock
-   completionHandler:(void (^)(NSURL *filePath, NSError *error))completionHandler {
-    
+- (void) downloadFile:(NSString *)URLString
+             withName:(NSString *)name
+             progress:(void (^)(NSProgress *downloadProgress))downloadProgressBlock
+    completionHandler:(void (^)(NSURL *filePath, NSError *error))completionHandler {
     [self.fileDownloader downloadFile:URLString
                              withName:name
                             directory:self.directory
                              progress:^(NSProgress *downloadProgress) {
-                                 dispatch_async(dispatch_get_main_queue(), ^{
-                                     downloadProgressBlock(downloadProgress);
-                                 });
-                             } completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
-                                 completionHandler(filePath, error);
-                             }];
+        if (downloadProgressBlock) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                downloadProgressBlock(downloadProgress);
+            });
+        }
+    }
+                    completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
+        completionHandler(filePath, error);
+    }];
 }
-
 
 @end

@@ -39,40 +39,38 @@
 
 #pragma mark - Public
 
-- (void)downloadFile:(NSString *)URLString
-            withName:(NSString *)name
-           directory:(NSSearchPathDirectory)directory
-            progress:(void (^)(NSProgress *downloadProgress)) downloadProgressBlock
-   completionHandler:(void (^)(NSURLResponse *response, NSURL *filePath, NSError *error))completionHandler {
-  
+- (void) downloadFile:(NSString *)URLString
+             withName:(NSString *)name
+            directory:(NSSearchPathDirectory)directory
+             progress:(void (^)(NSProgress *downloadProgress))downloadProgressBlock
+    completionHandler:(void (^)(NSURLResponse *response, NSURL *filePath, NSError *error))completionHandler {
     NSURLSessionDownloadTask *downloadTask = [self.manager downloadTaskWithRequest:[self requestWithURLString:URLString]
                                                                           progress:downloadProgressBlock
                                                                        destination:^NSURL *(NSURL *targetPath, NSURLResponse *response) {
-                                                                           NSURL *fileURL;
-                                                                           NSURL *directoryURL = [[NSFileManager defaultManager] URLForDirectory:directory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
-                                                                           if (name) {
-                                                                               fileURL = [directoryURL URLByAppendingPathComponent:name];
-                                                                           }
-                                                                           else {
-                                                                               fileURL = [directoryURL URLByAppendingPathComponent:[response suggestedFilename]];
-                                                                           }
-                                                                           return fileURL;
-                                                                       }
+        NSURL *fileURL;
+        NSURL *directoryURL = [[NSFileManager defaultManager] URLForDirectory:directory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
+        if (name) {
+            fileURL = [directoryURL URLByAppendingPathComponent:name];
+        }
+        else {
+            fileURL = [directoryURL URLByAppendingPathComponent:[response suggestedFilename]];
+        }
+        return fileURL;
+    }
                                                                  completionHandler:completionHandler];
     [downloadTask resume];
-    
 }
 
 - (void)downloadInDocumentsFile:(NSString *)URLString
                        withName:(NSString *)name
-            progress:(void (^)(NSProgress *downloadProgress)) downloadProgressBlock
-   completionHandler:(void (^)(NSURLResponse *response, NSURL *filePath, NSError *error))completionHandler {
+                       progress:(void (^)(NSProgress *downloadProgress))downloadProgressBlock
+              completionHandler:(void (^)(NSURLResponse *response, NSURL *filePath, NSError *error))completionHandler {
     [self downloadFile:URLString withName:name directory:NSDocumentDirectory progress:downloadProgressBlock completionHandler:completionHandler];
 }
 
 - (void)downloadInCacheFile:(NSString *)URLString
                    withName:(NSString *)name
-                   progress:(void (^)(NSProgress *downloadProgress)) downloadProgressBlock
+                   progress:(void (^)(NSProgress *downloadProgress))downloadProgressBlock
           completionHandler:(void (^)(NSURLResponse *response, NSURL *filePath, NSError *error))completionHandler {
     [self downloadFile:URLString withName:name directory:NSCachesDirectory progress:downloadProgressBlock completionHandler:completionHandler];
 }

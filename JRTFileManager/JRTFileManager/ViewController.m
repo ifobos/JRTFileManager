@@ -6,8 +6,6 @@
 //  Copyright © 2016 jerti. All rights reserved.
 //
 
-// https://assets-cdn.github.com/images/modules/logos_page/Octocat.png
-
 #import "ViewController.h"
 #import "JRTFileManager.h"
 
@@ -38,7 +36,6 @@
     NSData *data = [[JRTFileManager sharedInstance] retrieveDataFromDirectoryWithPath:@"Octocat.png"];
     UIImage *image = [UIImage imageWithData:data];
     self.imageView.image = image;
-    
 }
 
 - (IBAction)deleteAction:(id)sender {
@@ -48,7 +45,6 @@
     else {
         [self log:@"Octocat.png Not Deleted"];
     }
-    
 }
 
 - (IBAction)saveAction:(id)sender {
@@ -59,8 +55,8 @@
     else {
         [self log:@"Octocat.png Not Saved"];
     }
-    
 }
+
 - (IBAction)existAction:(id)sender {
     if ([[JRTFileManager sharedInstance] fileExistsInDirectory:@"Octocat.png"]) {
         [self log:@"Octocat.png Exist"];
@@ -68,7 +64,6 @@
     else {
         [self log:@"Octocat.png Not Exist"];
     }
-    
 }
 
 - (IBAction)clearImageViewAction:(id)sender {
@@ -77,13 +72,8 @@
 
 #pragma mark - helpers
 
-- (void)log:(NSString *)text
-{
+- (void)log:(NSString *)text {
     self.logTextView.text = [self.logTextView.text stringByAppendingString:[NSString stringWithFormat:@"\n\n > %@", text]];
-
 }
-
-
-
 
 @end

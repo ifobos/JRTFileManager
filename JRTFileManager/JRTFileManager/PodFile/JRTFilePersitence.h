@@ -27,14 +27,14 @@
 
 - (BOOL)saveData:(NSData *)data
           toPath:(NSString *)absolutePath;
-
+          
 - (BOOL)createDirectoryAtPath:(NSString *)absolutePath;
 
 - (BOOL)fileExistsAtPath:(NSString *)absolutePath;
 
 - (void)fileExistsAtPath:(NSString *)absolutePath
               completion:(void (^)(BOOL fileExists))completion;
-
+              
 - (BOOL)deleteDataAtPath:(NSString *)absolutePath;
 
 - (NSURL *)fileURLForPath:(NSString *)absolutePath;

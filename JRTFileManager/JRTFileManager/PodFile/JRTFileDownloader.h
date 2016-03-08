@@ -22,20 +22,20 @@
 
 @interface JRTFileDownloader : NSObject
 
-- (void)downloadFile:(NSString *)URLString
-            withName:(NSString *)name
-           directory:(NSSearchPathDirectory)directory
-            progress:(void (^)(NSProgress *downloadProgress)) downloadProgressBlock
-   completionHandler:(void (^)(NSURLResponse *response, NSURL *filePath, NSError *error))completionHandler;
-
+- (void) downloadFile:(NSString *)URLString
+             withName:(NSString *)name
+            directory:(NSSearchPathDirectory)directory
+             progress:(void (^)(NSProgress *downloadProgress))downloadProgressBlock
+    completionHandler:(void (^)(NSURLResponse *response, NSURL *filePath, NSError *error))completionHandler;
+    
 - (void)downloadInDocumentsFile:(NSString *)URLString
                        withName:(NSString *)name
-                       progress:(void (^)(NSProgress *downloadProgress)) downloadProgressBlock
+                       progress:(void (^)(NSProgress *downloadProgress))downloadProgressBlock
               completionHandler:(void (^)(NSURLResponse *response, NSURL *filePath, NSError *error))completionHandler;
-
+              
 - (void)downloadInCacheFile:(NSString *)URLString
                    withName:(NSString *)name
-                   progress:(void (^)(NSProgress *downloadProgress)) downloadProgressBlock
+                   progress:(void (^)(NSProgress *downloadProgress))downloadProgressBlock
           completionHandler:(void (^)(NSURLResponse *response, NSURL *filePath, NSError *error))completionHandler;
-
+          
 @end

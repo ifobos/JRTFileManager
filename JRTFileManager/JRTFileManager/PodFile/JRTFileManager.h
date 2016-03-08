@@ -39,9 +39,9 @@
 
 - (BOOL)deleteDataFromDirectoryWithPath:(NSString *)relativePath;
 
-- (void)downloadFile:(NSString *)URLString
-            withName:(NSString *)name
-            progress:(void (^)(NSProgress *downloadProgress)) downloadProgressBlock
-   completionHandler:(void (^)(NSURL *filePath, NSError *error))completionHandler;
-
+- (void) downloadFile:(NSString *)URLString
+             withName:(NSString *)name
+             progress:(void (^)(NSProgress *downloadProgress))downloadProgressBlock
+    completionHandler:(void (^)(NSURL *filePath, NSError *error))completionHandler;
+    
 @end
