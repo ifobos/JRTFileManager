@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31FD49451C8A3AF800CF64A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD49441C8A3AF800CF64A7 /* main.m */; };
+		31FD49481C8A3AF800CF64A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD49471C8A3AF800CF64A7 /* AppDelegate.m */; };
+		31FD494B1C8A3AF800CF64A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD494A1C8A3AF800CF64A7 /* ViewController.m */; };
+		31FD494E1C8A3AF800CF64A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31FD494C1C8A3AF800CF64A7 /* Main.storyboard */; };
+		31FD49501C8A3AF800CF64A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31FD494F1C8A3AF800CF64A7 /* Assets.xcassets */; };
+		31FD49531C8A3AF800CF64A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31FD49511C8A3AF800CF64A7 /* LaunchScreen.storyboard */; };
+		31FD495D1C8A3C8800CF64A7 /* JRTFileDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD495C1C8A3C8800CF64A7 /* JRTFileDownloader.m */; };
+		31FD49601C8A42E000CF64A7 /* JRTFilePersitence.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD495F1C8A42E000CF64A7 /* JRTFilePersitence.m */; };
+		31FD49631C8A47F500CF64A7 /* JRTFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD49621C8A47F500CF64A7 /* JRTFileManager.m */; };
+		CC1BE1DFC03BCE3202BBBF36 /* libPods-JRTFileManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F36F32821EFA755F0A9399E /* libPods-JRTFileManager.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F36F32821EFA755F0A9399E /* libPods-JRTFileManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JRTFileManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		273D5C15A78D00899B54C790 /* Pods-JRTFileManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRTFileManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JRTFileManager/Pods-JRTFileManager.debug.xcconfig"; sourceTree = "<group>"; };
+		31FD49401C8A3AF800CF64A7 /* JRTFileManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRTFileManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31FD49441C8A3AF800CF64A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		31FD49461C8A3AF800CF64A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		31FD49471C8A3AF800CF64A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		31FD49491C8A3AF800CF64A7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		31FD494A1C8A3AF800CF64A7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		31FD494D1C8A3AF800CF64A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31FD494F1C8A3AF800CF64A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31FD49521C8A3AF800CF64A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		31FD49541C8A3AF800CF64A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31FD495B1C8A3C8800CF64A7 /* JRTFileDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTFileDownloader.h; sourceTree = "<group>"; };
+		31FD495C1C8A3C8800CF64A7 /* JRTFileDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTFileDownloader.m; sourceTree = "<group>"; };
+		31FD495E1C8A42E000CF64A7 /* JRTFilePersitence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTFilePersitence.h; sourceTree = "<group>"; };
+		31FD495F1C8A42E000CF64A7 /* JRTFilePersitence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTFilePersitence.m; sourceTree = "<group>"; };
+		31FD49611C8A47F500CF64A7 /* JRTFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTFileManager.h; sourceTree = "<group>"; };
+		31FD49621C8A47F500CF64A7 /* JRTFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTFileManager.m; sourceTree = "<group>"; };
+		BB57D041A5158D28F2288101 /* Pods-JRTFileManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRTFileManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-JRTFileManager/Pods-JRTFileManager.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31FD493D1C8A3AF800CF64A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC1BE1DFC03BCE3202BBBF36 /* libPods-JRTFileManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31FD49371C8A3AF800CF64A7 = {
+			isa = PBXGroup;
+			children = (
+				31FD49421C8A3AF800CF64A7 /* JRTFileManager */,
+				31FD49411C8A3AF800CF64A7 /* Products */,
+				DCF73AADC59C213795B14543 /* Pods */,
+				BE1C16C8B55AAB77E0527674 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		31FD49411C8A3AF800CF64A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31FD49401C8A3AF800CF64A7 /* JRTFileManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31FD49421C8A3AF800CF64A7 /* JRTFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				31FD495A1C8A3C3900CF64A7 /* PodFile */,
+				31FD49431C8A3AF800CF64A7 /* Supporting Files */,
+				31FD49461C8A3AF800CF64A7 /* AppDelegate.h */,
+				31FD49471C8A3AF800CF64A7 /* AppDelegate.m */,
+				31FD494F1C8A3AF800CF64A7 /* Assets.xcassets */,
+				31FD49541C8A3AF800CF64A7 /* Info.plist */,
+				31FD49511C8A3AF800CF64A7 /* LaunchScreen.storyboard */,
+				31FD494C1C8A3AF800CF64A7 /* Main.storyboard */,
+				31FD49491C8A3AF800CF64A7 /* ViewController.h */,
+				31FD494A1C8A3AF800CF64A7 /* ViewController.m */,
+			);
+			path = JRTFileManager;
+			sourceTree = "<group>";
+		};
+		31FD49431C8A3AF800CF64A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31FD49441C8A3AF800CF64A7 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31FD495A1C8A3C3900CF64A7 /* PodFile */ = {
+			isa = PBXGroup;
+			children = (
+				31FD495B1C8A3C8800CF64A7 /* JRTFileDownloader.h */,
+				31FD495C1C8A3C8800CF64A7 /* JRTFileDownloader.m */,
+				31FD495E1C8A42E000CF64A7 /* JRTFilePersitence.h */,
+				31FD495F1C8A42E000CF64A7 /* JRTFilePersitence.m */,
+				31FD49611C8A47F500CF64A7 /* JRTFileManager.h */,
+				31FD49621C8A47F500CF64A7 /* JRTFileManager.m */,
+			);
+			path = PodFile;
+			sourceTree = "<group>";
+		};
+		BE1C16C8B55AAB77E0527674 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F36F32821EFA755F0A9399E /* libPods-JRTFileManager.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCF73AADC59C213795B14543 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				273D5C15A78D00899B54C790 /* Pods-JRTFileManager.debug.xcconfig */,
+				BB57D041A5158D28F2288101 /* Pods-JRTFileManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31FD493F1C8A3AF800CF64A7 /* JRTFileManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31FD49571C8A3AF800CF64A7 /* Build configuration list for PBXNativeTarget "JRTFileManager" */;
+			buildPhases = (
+				293AF9FA45D0197EFB39E355 /* Check Pods Manifest.lock */,
+				31FD493C1C8A3AF800CF64A7 /* Sources */,
+				31FD493D1C8A3AF800CF64A7 /* Frameworks */,
+				31FD493E1C8A3AF800CF64A7 /* Resources */,
+				CD61F580A6FB6095DB532FD3 /* Embed Pods Frameworks */,
+				0EB1ACF4241E28C4D249A5F1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JRTFileManager;
+			productName = JRTFileManager;
+			productReference = 31FD49401C8A3AF800CF64A7 /* JRTFileManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31FD49381C8A3AF800CF64A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = jerti;
+				TargetAttributes = {
+					31FD493F1C8A3AF800CF64A7 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 31FD493B1C8A3AF800CF64A7 /* Build configuration list for PBXProject "JRTFileManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31FD49371C8A3AF800CF64A7;
+			productRefGroup = 31FD49411C8A3AF800CF64A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31FD493F1C8A3AF800CF64A7 /* JRTFileManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31FD493E1C8A3AF800CF64A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31FD49531C8A3AF800CF64A7 /* LaunchScreen.storyboard in Resources */,
+				31FD49501C8A3AF800CF64A7 /* Assets.xcassets in Resources */,
+				31FD494E1C8A3AF800CF64A7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EB1ACF4241E28C4D249A5F1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JRTFileManager/Pods-JRTFileManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		293AF9FA45D0197EFB39E355 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CD61F580A6FB6095DB532FD3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JRTFileManager/Pods-JRTFileManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31FD493C1C8A3AF800CF64A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31FD494B1C8A3AF800CF64A7 /* ViewController.m in Sources */,
+				31FD49631C8A47F500CF64A7 /* JRTFileManager.m in Sources */,
+				31FD495D1C8A3C8800CF64A7 /* JRTFileDownloader.m in Sources */,
+				31FD49481C8A3AF800CF64A7 /* AppDelegate.m in Sources */,
+				31FD49451C8A3AF800CF64A7 /* main.m in Sources */,
+				31FD49601C8A42E000CF64A7 /* JRTFilePersitence.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		31FD494C1C8A3AF800CF64A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31FD494D1C8A3AF800CF64A7 /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		31FD49511C8A3AF800CF64A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31FD49521C8A3AF800CF64A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31FD49551C8A3AF800CF64A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		31FD49561C8A3AF800CF64A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31FD49581C8A3AF800CF64A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 273D5C15A78D00899B54C790 /* Pods-JRTFileManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JRTFileManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerti.JRTFileManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		31FD49591C8A3AF800CF64A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB57D041A5158D28F2288101 /* Pods-JRTFileManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JRTFileManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerti.JRTFileManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31FD493B1C8A3AF800CF64A7 /* Build configuration list for PBXProject "JRTFileManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31FD49551C8A3AF800CF64A7 /* Debug */,
+				31FD49561C8A3AF800CF64A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31FD49571C8A3AF800CF64A7 /* Build configuration list for PBXNativeTarget "JRTFileManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31FD49581C8A3AF800CF64A7 /* Debug */,
+				31FD49591C8A3AF800CF64A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31FD49381C8A3AF800CF64A7 /* Project object */;
+}

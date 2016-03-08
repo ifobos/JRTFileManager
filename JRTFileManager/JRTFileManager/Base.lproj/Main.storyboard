@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebr-kD-XAq">
+                                <rect key="frame" x="20" y="28" width="127" height="30"/>
+                                <state key="normal" title="Download Octocat"/>
+                                <connections>
+                                    <action selector="downloadAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J4i-UN-nGB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaq-Ba-cVp">
+                                <rect key="frame" x="20" y="166" width="92" height="30"/>
+                                <state key="normal" title="Save Octocat"/>
+                                <connections>
+                                    <action selector="saveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g0c-gt-uqn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zp5-0v-ltv">
+                                <rect key="frame" x="20" y="74" width="115" height="30"/>
+                                <state key="normal" title="Retrieve Octocat"/>
+                                <connections>
+                                    <action selector="retrieveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hOo-4e-nxl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTN-y0-emE">
+                                <rect key="frame" x="20" y="120" width="104" height="30"/>
+                                <state key="normal" title="Delete Octocat"/>
+                                <connections>
+                                    <action selector="deleteAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Bg-sC-lAH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmH-7H-5e3">
+                                <rect key="frame" x="20" y="212" width="92" height="30"/>
+                                <state key="normal" title="Exist Octocat"/>
+                                <connections>
+                                    <action selector="existAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ccK-Nm-k12"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="79k-1f-h7M">
+                                <rect key="frame" x="20" y="258" width="560" height="334"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Efc-Lu-98U">
+                                <rect key="frame" x="400" y="28" width="180" height="180"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="RrY-cQ-IQc"/>
+                                    <constraint firstAttribute="width" constant="180" id="suY-T2-XFZ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xoy-ft-2ya">
+                                <rect key="frame" x="550" y="28" width="30" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearImageViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aok-5I-nPy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="79k-1f-h7M" secondAttribute="bottom" constant="8" symbolic="YES" id="BYh-bc-zCw"/>
+                            <constraint firstItem="dTN-y0-emE" firstAttribute="top" secondItem="Zp5-0v-ltv" secondAttribute="bottom" constant="16" id="DnI-Op-4KF"/>
+                            <constraint firstItem="Efc-Lu-98U" firstAttribute="top" secondItem="Xoy-ft-2ya" secondAttribute="bottom" constant="-41" id="I13-j7-Jgt"/>
+                            <constraint firstItem="Ebr-kD-XAq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="KiK-LF-QKS"/>
+                            <constraint firstItem="Ebr-kD-XAq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="MRv-Fs-Sfe"/>
+                            <constraint firstItem="Zp5-0v-ltv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="Nlg-aY-vor"/>
+                            <constraint firstItem="dTN-y0-emE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="PQH-DV-7Xe"/>
+                            <constraint firstAttribute="trailing" secondItem="79k-1f-h7M" secondAttribute="trailing" constant="20" symbolic="YES" id="Qbn-zn-g8M"/>
+                            <constraint firstItem="Xoy-ft-2ya" firstAttribute="leading" secondItem="Efc-Lu-98U" secondAttribute="trailing" constant="-30" id="TAu-bQ-Tsb"/>
+                            <constraint firstItem="yaq-Ba-cVp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="WBE-td-Nin"/>
+                            <constraint firstItem="Efc-Lu-98U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Xla-PW-sSD"/>
+                            <constraint firstItem="79k-1f-h7M" firstAttribute="top" secondItem="DmH-7H-5e3" secondAttribute="bottom" constant="16" id="jtt-pj-1a3"/>
+                            <constraint firstAttribute="trailing" secondItem="Efc-Lu-98U" secondAttribute="trailing" constant="20" symbolic="YES" id="nce-XI-1jo"/>
+                            <constraint firstItem="DmH-7H-5e3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="oUv-et-vi0"/>
+                            <constraint firstItem="DmH-7H-5e3" firstAttribute="top" secondItem="yaq-Ba-cVp" secondAttribute="bottom" constant="16" id="qj4-ua-1pM"/>
+                            <constraint firstItem="Zp5-0v-ltv" firstAttribute="top" secondItem="Ebr-kD-XAq" secondAttribute="bottom" constant="16" id="sVs-rO-F2r"/>
+                            <constraint firstItem="yaq-Ba-cVp" firstAttribute="top" secondItem="dTN-y0-emE" secondAttribute="bottom" constant="16" id="tyn-EO-cdP"/>
+                            <constraint firstItem="79k-1f-h7M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="xp5-EA-a3s"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Efc-Lu-98U" id="BtY-cz-Kak"/>
+                        <outlet property="logTextView" destination="79k-1f-h7M" id="d8F-AR-7fz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="424" y="216"/>
+        </scene>
+    </scenes>
+</document>
