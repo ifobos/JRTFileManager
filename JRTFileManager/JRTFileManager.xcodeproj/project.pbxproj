@@ -56,10 +56,10 @@
 		31FD49371C8A3AF800CF64A7 = {
 			isa = PBXGroup;
 			children = (
-				31FD49421C8A3AF800CF64A7 /* JRTFileManager */,
-				31FD49411C8A3AF800CF64A7 /* Products */,
-				DCF73AADC59C213795B14543 /* Pods */,
 				BE1C16C8B55AAB77E0527674 /* Frameworks */,
+				31FD49421C8A3AF800CF64A7 /* JRTFileManager */,
+				DCF73AADC59C213795B14543 /* Pods */,
+				31FD49411C8A3AF800CF64A7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,7 +74,7 @@
 		31FD49421C8A3AF800CF64A7 /* JRTFileManager */ = {
 			isa = PBXGroup;
 			children = (
-				31FD495A1C8A3C3900CF64A7 /* PodFile */,
+				31FD495A1C8A3C3900CF64A7 /* PodFiles */,
 				31FD49431C8A3AF800CF64A7 /* Supporting Files */,
 				31FD49461C8A3AF800CF64A7 /* AppDelegate.h */,
 				31FD49471C8A3AF800CF64A7 /* AppDelegate.m */,
@@ -96,17 +96,17 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		31FD495A1C8A3C3900CF64A7 /* PodFile */ = {
+		31FD495A1C8A3C3900CF64A7 /* PodFiles */ = {
 			isa = PBXGroup;
 			children = (
 				31FD495B1C8A3C8800CF64A7 /* JRTFileDownloader.h */,
 				31FD495C1C8A3C8800CF64A7 /* JRTFileDownloader.m */,
-				31FD495E1C8A42E000CF64A7 /* JRTFilePersitence.h */,
-				31FD495F1C8A42E000CF64A7 /* JRTFilePersitence.m */,
 				31FD49611C8A47F500CF64A7 /* JRTFileManager.h */,
 				31FD49621C8A47F500CF64A7 /* JRTFileManager.m */,
+				31FD495E1C8A42E000CF64A7 /* JRTFilePersitence.h */,
+				31FD495F1C8A42E000CF64A7 /* JRTFilePersitence.m */,
 			);
-			path = PodFile;
+			path = PodFiles;
 			sourceTree = "<group>";
 		};
 		BE1C16C8B55AAB77E0527674 /* Frameworks */ = {
