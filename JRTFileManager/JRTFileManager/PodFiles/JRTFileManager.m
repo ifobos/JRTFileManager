@@ -48,7 +48,7 @@
 
 - (NSSearchPathDirectory)directory {
     if (!_directory) {
-        _directory = NSDocumentDirectory;
+        _directory = NSCachesDirectory;
     }
     return _directory;
 }
